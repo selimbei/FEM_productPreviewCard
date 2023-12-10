@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+main {
+    background-color: #f3eae3;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    /* justify-items: center; */
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    width: 35rem;
+    height: 25rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 430px) {
+    .card {
+        flex-direction: column;
+        max-width: 90vw;
+        min-height: 90vh;
+    }
+    
+    .product {
+        max-height: 40%;
+    }
+
+    .product img {
+        object-position: center;
+    }
+
+    .detail {
+        height: 60%;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        padding: 5rem;
+    }
+}
+
+.product {
+    min-width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product img {
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.detail {
+    box-sizing: border-box;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.title p {
+    opacity: .5;
+    letter-spacing: .3rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title h1 {
+    font-family: serif;
+}
+
+.desc {
+    opacity: .6;
+    line-height: 1.5;
+}
+
+.price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-family: serif;
+}
+
+.price h2 {
+    color: #3c8268;
+    font-size: 1.8rem;
+}
+
+.price p {
+    text-decoration: line-through;
+    opacity: .6;
+}
+
+button {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #3c8268;
+    color: white;
+    font-weight: bold;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a4031;
+}
